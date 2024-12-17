@@ -2,7 +2,7 @@ let questionNumber = 0;
 let done = false;
 let points = new Set();
 let inputsArr;
-fetch("http://127.0.0.1:5500/js/questions.json")
+fetch("https://hzaek.github.io/Questions/js/questions.json")
   .then((res) => {
     let a = res.json();
     return a;
@@ -243,7 +243,7 @@ if (sessionStorage.getItem('timer') !== null){
     let timeLeft = testTime - startTime
     let minutes = Math.floor(timeLeft / 1000 /60)
     if (minutes < 0){
-        sessionStorage.removeItem('timer')
+        sessionStorage.clear()
         location.reload()
     }
 }else{
