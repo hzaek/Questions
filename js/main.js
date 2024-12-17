@@ -162,6 +162,14 @@ fetch("https://hzaek.github.io/Questions/js/questions.json")
                 saveOptions(questionNumber);
               } else {
                 questionNumber += 1;
+                let testball = document.querySelectorAll(".balls > li");
+
+                while (
+                  done === false &&
+                  testball[questionNumber].classList.contains("done-ball")
+                ) {
+                  questionNumber += 1;
+                }
                 sessionStorage.setItem("questionNumber", `${questionNumber}`);
                 let ballActive = document.getElementById(
                   `ball${questionNumber}`
