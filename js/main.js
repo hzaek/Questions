@@ -181,6 +181,7 @@ fetch("http://127.0.0.1:5500/js/questions.json")
 
     onSubmit(myRandomJson, questionNumber);
     saveOptions(questionNumber);
+    timeFunc()
     // Submit State
   });
 
@@ -231,6 +232,7 @@ function saveOptions(questionNumber) {
     });
   });
 }
+function timeFunc(){
 
 let timer = document.querySelector(".timer");
 let startTime = new Date()
@@ -312,3 +314,5 @@ let abc = setInterval(function(){
 
 },1000)
 
+
+}
