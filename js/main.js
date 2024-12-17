@@ -2,7 +2,7 @@ let questionNumber = 0;
 let done = false;
 let points = new Set();
 let inputsArr;
-fetch("https://hzaek.github.io/Questions/js/questions.json")
+fetch("https://hzaek.github.io/Quiz-App/js/questions.json")
   .then((res) => {
     let a = res.json();
     return a;
