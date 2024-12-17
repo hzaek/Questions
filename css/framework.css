@@ -1,0 +1,435 @@
+/* Start Box Model */
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mr-5{
+    margin-right: 5px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.m-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-rl-5{
+    padding: 0px 5px;
+}
+.p-tb-5{
+    padding: 5px 0;
+}
+.p-tb-10{
+    padding: 10px 0;
+}
+.p-tb-20{
+    padding: 20px 0;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+@media (max-width:767px){
+    .p-sm-10{
+        padding: 10px;
+    }
+}
+
+.r-6{
+    border-radius: 6px;
+}
+.r-half{
+    border-radius: 50%;
+}
+
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+.ali-center{
+    align-items: center;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.dir-col{
+    flex-direction: column;
+}
+
+.text-cap{
+    text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.bg-white{
+    background-color: white;
+}
+.bg-eee{
+    background-color: #eee;
+}
+
+
+.bg-orange{
+    background-color:var(--orange-color) ;
+
+}
+.bg-blue{
+    background-color:var(--blue-color) ;
+
+}
+.bg-green{
+    background-color:var(--green-color) ;
+
+}
+.bg-red{
+    background-color:var(--red-color) ;
+
+}
+.bg-gray{
+    background-color:var(--gray-color) ;
+
+}
+.bg-eee{
+    background-color: #eee;
+}
+.bg-f6{
+    background-color: #f6f6f6;
+}
+
+.black{
+    color: black;
+}
+.orange{
+    color:var(--orange-color) ;
+
+}
+.blue{
+    color:var(--blue-color) ;
+
+}
+.green{
+    color:var(--green-color) ;
+
+}
+.red{
+    color:var(--red-color) ;
+
+}
+.gray{
+    color:var(--gray-color) ;
+
+}
+.white{
+    color: white;
+}
+
+.gap-20{
+    gap: 20px;
+}
+.gap-10{
+    gap: 10px;
+}
+
+.gap-5{
+    gap: 5px;
+}
+.full-w{
+    width: 100%;
+}
+
+.op-3{
+    opacity: 0.3;
+}
+.op-5{
+    opacity: 0.5;
+}
+/* End Box Model */
+
+/* Start Component */
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.d-flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-flex-between-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.flex-column-wrap{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.lh-3{
+    line-height: 1.3;
+}
+
+/* End Component */
+
+/* Start Mod */
+.ccc-border{
+    border: solid 1px #ccc;
+    border-radius: 6px;
+}
+.ccc-border-b{
+    border-bottom: solid 1px #ccc;
+
+}
+.ccc-border-t{
+    border-top: solid 1px #ccc;
+
+}
+/* End Mod */
+
+
+
+/* Start Toggle */
+.toggle{
+    background-color: #ccc;
+    width: 80px;
+    display: block;
+    border-radius: 20px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.toggle input{
+    visibility: hidden;
+
+}
+.toggle .round{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 2.5px;
+    transition: var(--main-transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle .round::before{
+    color: #ccc;
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+
+}
+.toggle input:checked + .round{
+    left: calc(100% - 27.5px);
+}
+.toggle input:checked + .round::before{
+    content: "\f00c";
+    color: var(--blue-color);
+}
+.toggle input ~ .bg{
+    transition: var(--main-transition);
+}
+.toggle input ~ .bg {
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.toggle input:checked ~ .bg {
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-color);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.toggle-sm{
+    background-color: #ccc;
+    width: 80px;
+    display: block;
+    border-radius: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.toggle-sm .round{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 2.5px;
+    transition: var(--main-transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-sm .round::before{
+    color: #ccc;
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    font-size: 10px;
+
+}
+.toggle-sm input:checked + .round{
+    left: calc(100% - 17.5px);
+}
+
+/* End Toggle */
+
+/* Start Tik */
+.tik{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: #ccc 1px solid;
+    position: relative;
+    
+}
+.tik::before{
+    transition: var(--main-transition);
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0px;
+    height: 0px;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+    opacity: 0;
+}
+.tik:checked:before{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(360deg);
+    font-size: 13px;
+    opacity: 1;
+}
+/* End Tik */

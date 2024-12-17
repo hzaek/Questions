@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link normalize.css File -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- Link awesome font -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Link My FrameWork -->
+    <link rel="stylesheet" href="../css/framework.css" />
+    <!-- Link main.css File -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Link Tailwind Output -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!-- Link Tailwind-auto-complete -->
+    <script src="../tailwind.config.js"></script>
+    <!-- Link Tailwind CDN Live -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-4 flex justify-center items-center h-svh">
+    <main class="bg-eee p-5 mx-auto max-w-full flex dir-col gap-5">
+      <header class="flex justify-between bg-white p-4">
+        <span>Category: HTML</span>
+        <span class="questionsCount">Questions count: </span>
+      </header>
+      <div class="question bg-white p-4">
+        <h1 class="title font-bold text-xl"></h1>
+        <div class="options mt-5 rounded-md overflow-hidden">
+          <!-- <label for="2" class="flex-1 bg-eee p-2 flex items-center gap-2">
+            <input id="2" type="radio" name="option" class="w-5 h-5" />
+            a
+          </label>
+
+          <label for="2" class="flex-1 bg-eee p-2 flex items-center gap-2">
+            <input id="2" type="radio" name="option" class="w-5 h-5" />
+            a
+          </label>
+
+          <label for="2" class="flex-1 bg-eee p-2 flex items-center gap-2">
+            <input id="2" type="radio" name="option" class="w-5 h-5" />
+            a
+          </label> -->
+        </div>
+      </div>
+      <input
+        type="submit"
+        value="Submit Answer"
+        class="text-center w-full p-4 rounded-md bg-blue-700 text-white font-bold"
+      />
+      <div class="list flex justify-between p-2 bg-white">
+        <ul class="balls flex items-center gap-1"></ul>
+        <div class="timer"><span class="minutes">00</span>:<span class="seconds">00</span></div>
+      </div>
+    </main>
+    <!-- Link main.js -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

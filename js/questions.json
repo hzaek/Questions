@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Why We Use <br> Tag",
+    "answers": [
+      "To Make Font Bold",
+      "To Make Font Bigger",
+      "To Create New Line",
+      "To Center Element"
+    ],
+    "trueAnswer": "To Create New Line"
+  },
+  {
+    "title": "Does <img> Tag Need Close Tage",
+    "answers": ["Yes", "No"],
+    "trueAnswer": "No"
+  },
+  {
+    "title": "Does <video> Tag Need Close Tage",
+    "answers": ["Yes", "No"],
+    "trueAnswer": "Yes"
+  },
+  {
+    "title": "What HTML Stands For",
+    "answers": ["Hyper Text Markup Language", "Higher Text Markup Language","Hyper Transfare Markup Language","None Of Them"],
+    "trueAnswer": "Hyper Text Markup Language"
+  },
+  {
+    "title": "Why Do we use <i> Tage",
+    "answers": ["To Make Font italic", "To Make font Bigger","To make our html more semantic","None Of Them"],
+    "trueAnswer": "To Make Font italic"
+  }
+
+]
+
+
+
+
