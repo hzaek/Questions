@@ -168,7 +168,12 @@ fetch("https://hzaek.github.io/Quiz-App/js/questions.json")
                   done === false &&
                   testball[questionNumber].classList.contains("done-ball")
                 ) {
-                  questionNumber += 1;
+                  console.log(questionNumber)
+                  
+                  questionNumber += 1
+                  if (questionNumber === myFitchedJson.length){
+                    questionNumber = 0
+                  }
                 }
                 sessionStorage.setItem("questionNumber", `${questionNumber}`);
                 let ballActive = document.getElementById(
