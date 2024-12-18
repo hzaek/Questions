@@ -189,7 +189,7 @@ fetch("https://hzaek.github.io/Quiz-App/js/questions.json")
 
     onSubmit(myRandomJson, questionNumber);
     saveOptions(questionNumber);
-    timeFunc(0.2)
+    timeFunc(5)
     // Submit State
   });
 
