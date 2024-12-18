@@ -189,7 +189,7 @@ fetch("https://hzaek.github.io/Quiz-App/js/questions.json")
 
     onSubmit(myRandomJson, questionNumber);
     saveOptions(questionNumber);
-    timeFunc()
+    timeFunc(0.2)
     // Submit State
   });
 
@@ -240,7 +240,7 @@ function saveOptions(questionNumber) {
     });
   });
 }
-function timeFunc(){
+function timeFunc(min){
 
 let timer = document.querySelector(".timer");
 let startTime = new Date()
@@ -251,14 +251,14 @@ if (sessionStorage.getItem('timer') !== null){
     let timeLeft = testTime - startTime
     let minutes = Math.floor(timeLeft / 1000 /60)
     if (minutes < 0){
+      
         sessionStorage.clear()
         location.reload()
     }
-}else{
-    testTime = new Date(startTime.getTime() + (1000 * 60 * 25))
 }
-
-
+if (sessionStorage.getItem('timer') === null){
+    testTime = new Date(startTime.getTime() + (1000 * 60 * min))
+}
 
 
 sessionStorage.setItem('timer',testTime.toISOString())
@@ -282,7 +282,7 @@ let abc = setInterval(function(){
             secSpan.textContent = `0${secondsLeft}`
             minSpan.textContent = `0${minutes}`
             break;
-        case secondsLeft < 10 && minutes > 10:
+        case secondsLeft < 10 && minutes >= 10:
             secSpan.textContent = `0${secondsLeft}`
             minSpan.textContent = `${minutes}`
             break;
